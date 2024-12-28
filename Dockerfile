@@ -19,6 +19,10 @@ RUN apk add --no-cache \
         libvpx \
         x264-libs
 
+# Download and install the latest stable version of yt-dlp from GitHub
+RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp \
+    && chmod a+rx /usr/local/bin/yt-dlp
+
 RUN apk add --no-cache \
         python3 py3-pip py3-setuptools py3-wheel \
         ca-certificates \
