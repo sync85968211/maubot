@@ -17,7 +17,8 @@ RUN apk add --no-cache \
         libdav1d \
         libmodplug \
         libvpx \
-        x264-libs
+        x264-libs \
+        curl
 
 # Download and install the latest stable version of yt-dlp from GitHub
 RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp \
