@@ -7,7 +7,17 @@ FROM alpine:3.20
 
 # Install ffmpeg and additional libraries
 RUN apk add --no-cache \
-        ffmpeg
+        ffmpeg \
+        x265-libs \
+        libwebp \
+        fdk-aac \
+        libzmq \
+        libopenmpt \
+        libass \
+        libdav1d \
+        libmodplug \
+        libvpx \
+        x264-libs
 
 RUN apk add --no-cache \
         python3 py3-pip py3-setuptools py3-wheel \
