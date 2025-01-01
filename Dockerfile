@@ -22,9 +22,9 @@ RUN apk add --no-cache \
 
 # Download and install the latest stable version of yt-dlp from GitHub
 RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp \
-    && chmod a+rx /usr/local/bin/yt-dlp
+    && chmod a+rx /usr/local/bin/yt-dlp \
     && mkdir -p /media_tmp \
-    && chmod -R a=rwx /media_tmp
+    && chmod -R a=rw /media_tmp
 
 RUN apk add --no-cache \
         python3 py3-pip py3-setuptools py3-wheel \
