@@ -18,6 +18,8 @@ RUN apk add --no-cache \
         libmodplug \
         libvpx \
         x264-libs \
+        oath-toolkit \
+        imagemagick \
         curl
 
 # Download and install the latest stable version of yt-dlp from GitHub
