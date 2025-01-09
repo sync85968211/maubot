@@ -18,7 +18,10 @@ RUN apk add --no-cache \
         libmodplug \
         libvpx \
         x264-libs \
-        oath-toolkit \
+        oath-toolkit-oathtool \
+        oath-toolkit-liboath \
+        oath-toolkit-doc \
+        oath-toolkit-dev \
         imagemagick \
         curl
 
